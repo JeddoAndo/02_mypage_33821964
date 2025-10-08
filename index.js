@@ -1,5 +1,6 @@
 // index.js
-// Simple Node.js web server for "My Page"
+// Simple Node.js web server for "MyPage"
+// Basic framework for now || test comment
 
 const http = require("http");
 const port = 8000;
