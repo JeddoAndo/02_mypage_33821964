@@ -43,7 +43,7 @@ function renderPage() {
 
     <footer>
       <p><strong>Change log:</strong> “Added banner + timestamps + light styling for Lab 3 Task 4”.</p>
-      <p>Server listening on <code>http://localhost:${port}</code> (on VM it’s your public URL).</p>
+      <p>Server listening on <code>http://localhost:${port}</code>.</p>
     </footer>
 
     <script>
@@ -60,5 +60,5 @@ http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.end(renderPage());
 }).listen(port, () => {
-  console.log(`MyPage server running at http://localhost:\${port}`);
+  console.log(`Node server running on port ${port}...`);
 });
