@@ -10,8 +10,8 @@ function renderPage() {
   <!DOCTYPE html>
   <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>My Page – Jed Fernandez (Lab 3 Update)</title>
     <style>
       :root { --accent: #0066cc; --bg: #f9fbff; }
@@ -57,7 +57,7 @@ function renderPage() {
 
 http.createServer((req, res) => {
   console.log(new Date().toISOString(), req.method, req.url);
-  res.writeHead(200, { "Content-Type": "text/html" });
+  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
   res.end(renderPage());
 }).listen(port, () => {
   console.log(`Node server running on port ${port}...`);
